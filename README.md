@@ -13,7 +13,7 @@ This data can be acquiered using the Fink Data Transfer Service : https://fink-p
 * __read_data.py__ is used on training samples to create a file format ready to pass to the active learning step.
 
 * Configure __AL_loop.py__ to run for 5000 loops querying 10 alerts at each step. The initial training size is 100 and we use 25 trees for the Random Forest during the AL phase (ensures fast process).
-Use __start_AL.py__ and __start_AL__.sh to run 5 randomly initialised computations on 5 cores. Run for UncSampling and RandomSampling for both AGN and SLSN.
+Use __start_AL.py__ and __start_AL.sh__ to run 5 randomly initialised computations on 5 cores. Run for UncSampling and RandomSampling for both AGN and SLSN.
 
 * The __metrics.ipynb__ notebook is used to visualise AL results and compute a final random forest model using the best of the 5 UncSampling run.
 We use RandomForestClassifier(random_state=0, max_depth=15, min_samples_leaf=0.0001) to ensure an efficient yet light model.
