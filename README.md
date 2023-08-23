@@ -1,6 +1,6 @@
 # Classifiers_ELASTICC
 The classifiers are trained using ELASTICC data from 27 November 2023 to 31 December 2023.
-This data can be acquiered using the Fink Data Transfer Service : https://fink-portal.org/download
+This data can be acquired using the Fink Data Transfer Service : https://fink-portal.org/download
 
 * __reformat.sh__ and __reformat.py__ files are used to compress the data by keeping only useful columns and concatenating the history.
 
