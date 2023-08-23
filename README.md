@@ -6,11 +6,9 @@ This data can be acquired using the Fink Data Transfer Service : https://fink-po
 
 * __sample.py__ is used to create a testing and a training sample (50/50) which ensures that objectId does not overlap between samples. 
 
-* __read_data.py__ is used for both AGN and SLSN to create a training and a testing sample. We select 500 K alerts in each sample. 
-
 * __feature_extract.py__ is used to extract both AGN and SLSN features from the training/testing samples.
 
-* __read_data.py__ is used on training samples to create a file format ready to pass to the active learning step.
+* __read_data.py__ is used on training samples to create a file format ready to pass to the active learning step. We select 500 K alerts.
 
 * Configure __AL_loop.py__ to run for 5000 loops querying 10 alerts at each step. The initial training size is 100 and we use 25 trees for the Random Forest during the AL phase (ensures fast process).
 Use __start_AL.py__ and __start_AL.sh__ to run 5 randomly initialised computations on 5 cores. Run for UncSampling and RandomSampling for both AGN and SLSN.
